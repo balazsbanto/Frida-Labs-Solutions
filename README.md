@@ -25,4 +25,4 @@ Java.perform(() => {
     MainActivity.get_flag(4919);
   };
 });
-```javascript
+```
