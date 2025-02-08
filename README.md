@@ -36,3 +36,12 @@ Java.perform(() => {
 });
 ```
 
+## Frida 0x4
+```javascript
+Java.perform(() => {
+    const Check = Java.use("com.ad2001.frida0x4.Check");
+    const check = Check.$new();
+    console.log(check.get_flag(1337));
+  });
+```
+  
