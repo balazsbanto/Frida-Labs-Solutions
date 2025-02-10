@@ -45,3 +45,14 @@ Java.perform(() => {
   });
 ```
   
+## Frida 0x5
+```javascript
+Java.perform(() => {
+    const MainActivity = Java.use("com.ad2001.frida0x5.MainActivity");
+    MainActivity.onCreate.implementation = function (savedInstanceState) {
+        this.onCreate(savedInstanceState);
+        this.flag(1337);
+    }
+  });
+  
+```
